@@ -70,7 +70,6 @@ main {
 .experience {
   margin-bottom: 40px;
   padding: 0 20px 0 20px;
-  /* Adjust left and right padding */
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
 }
@@ -79,7 +78,6 @@ main {
   font-size: 1.8em;
   color: #333;
   margin-bottom: 5px;
-  /* Add margin to the left */
   margin-left: 20px;
 }
 
@@ -87,7 +85,6 @@ main {
   font-size: 1.2em;
   color: #777;
   margin-bottom: 15px;
-  /* Add margin to the left */
   margin-left: 20px;
 }
 
@@ -95,7 +92,6 @@ main {
 .experience ul {
   list-style-type: disc;
   margin-left: 40px;
-  /* Indent the list */
   padding-left: 0;
 }
 
