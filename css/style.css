@@ -3,6 +3,8 @@
 /* Reset some default styles */
 body,
 h1,
+h2,
+h3,
 p,
 ul,
 li {
@@ -10,35 +12,56 @@ li {
   padding: 0;
 }
 
-/* Style the body */
+/* Body Styles */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
 }
 
-/* Navigation styles */
-nav {
+/* Typography Classes */
+.main-heading {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 2.5em;
+  color: #35424a;
+}
+
+.section-title {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.subheading {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.paragraph {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+.navbar {
   background-color: #35424a;
-  color: #ffffff;
   overflow: hidden;
 }
 
-nav ul {
+.navbar ul {
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
   justify-content: center;
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
-nav ul li {
+.navbar li {
   margin: 0;
 }
 
-nav ul li a {
+.navbar a {
   display: block;
   color: #ffffff;
   padding: 14px 20px;
@@ -46,60 +69,12 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a:hover {
+.navbar a:hover {
   background-color: #e8491d;
-  text-decoration: none;
 }
 
-/* Main content styles */
-main {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Main heading style */
-main h1 {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 2.5em;
-  color: #35424a;
-}
-
-/* Experience section styling */
-.experience {
-  margin-bottom: 40px;
-  padding: 0 20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-}
-
-.experience h2 {
-  font-size: 1.8em;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.experience h3 {
-  font-size: 1.2em;
-  color: #777;
-  margin-bottom: 15px;
-}
-
-.experience ul {
-  list-style-type: disc;
-  margin-left: 40px;
-}
-
-.experience ul li {
-  font-size: 1em;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-/* Footer styles */
-footer {
+/* Footer */
+.footer {
   background-color: #35424a;
   color: #ffffff;
   text-align: center;
@@ -109,31 +84,33 @@ footer {
   bottom: 0;
 }
 
+/* Button Styles */
+.button {
+  background-color: #e8491d;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #cf3c13;
+}
+
 /* Responsive Layout */
 @media screen and (max-width: 768px) {
-
-  /* Navigation: Stack menu items vertically */
-  nav ul {
+  .navbar ul {
     flex-direction: column;
   }
 
-  nav ul li {
-    display: block;
+  .navbar a {
     text-align: left;
-  }
-
-  nav ul li a {
     padding: 10px;
     border-bottom: 1px solid #e8491d;
   }
 
-  /* Adjust experience section padding on mobile */
-  .experience {
-    padding: 0 10px;
-  }
-
-  /* Footer position adjustment for smaller screens */
-  footer {
+  .footer {
     position: relative;
   }
 }
