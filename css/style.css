@@ -22,26 +22,33 @@ body {
 nav {
   background-color: #35424a;
   color: #ffffff;
+  overflow: hidden;
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0;
 }
 
-nav a {
+nav ul li a {
+  display: block;
   color: #ffffff;
+  padding: 14px 20px;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav ul li a:hover {
+  background-color: #e8491d;
+  text-decoration: none;
 }
 
 /* Main content styles */
@@ -49,6 +56,46 @@ main {
   padding: 20px;
   max-width: 800px;
   margin: auto;
+}
+
+/* Main heading style */
+main h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  color: #35424a;
+}
+
+/* Experience section styling */
+.experience {
+  margin-bottom: 40px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.experience h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.experience h3 {
+  font-size: 1.2em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.experience ul {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+.experience ul li {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 /* Footer styles */
@@ -60,4 +107,33 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+
+  /* Navigation: Stack menu items vertically */
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: left;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    border-bottom: 1px solid #e8491d;
+  }
+
+  /* Adjust experience section padding on mobile */
+  .experience {
+    padding: 0 10px;
+  }
+
+  /* Footer position adjustment for smaller screens */
+  footer {
+    position: relative;
+  }
 }
