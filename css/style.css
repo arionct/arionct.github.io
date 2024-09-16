@@ -66,14 +66,7 @@ main {
   color: #35424a;
 }
 
-/* Experience section styling */
-.experience {
-  margin-bottom: 40px;
-  padding: 0 20px 0 20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-}
-
+/* Section title and subheading styles */
 .section-title {
   font-size: 1.8em;
   color: #333;
@@ -88,7 +81,15 @@ main {
   margin-left: 20px;
 }
 
-/* List styles */
+/* Experience section styling */
+.experience {
+  margin-bottom: 40px;
+  padding: 0 20px 0 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+/* List styles within experience */
 .experience ul {
   list-style-type: disc;
   margin-left: 40px;
@@ -99,6 +100,42 @@ main {
   font-size: 1em;
   line-height: 1.6;
   margin-bottom: 10px;
+}
+
+/* Project section styling */
+.project {
+  margin-bottom: 40px;
+  padding: 0 20px 0 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+/* Paragraph styling within projects */
+.project .paragraph {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Button styles */
+.button {
+  background-color: #e8491d;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.project .button {
+  margin-left: 20px;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+  background-color: #cf3c13;
+  text-decoration: none;
 }
 
 /* Footer styles */
@@ -132,6 +169,20 @@ main {
   /* Adjust experience section padding on mobile */
   .experience {
     padding: 0 10px;
+  }
+
+  /* Adjust project section padding on mobile */
+  .project {
+    padding: 0 10px;
+  }
+
+  /* Adjust margins for headings and paragraphs on mobile */
+  .section-title,
+  .subheading,
+  .project .paragraph,
+  .project .button {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   /* Footer position adjustment for smaller screens */
