@@ -116,6 +116,20 @@ main {
   margin-right: 20px;
 }
 
+/* Assignment section styling */
+.assignment {
+  margin-bottom: 40px;
+  padding: 0 20px 0 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+/* Paragraph styling within assignments */
+.assignment .paragraph {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 /* Contact page styles */
 .contact-info {
   max-width: 600px;
@@ -155,7 +169,8 @@ main {
   margin-top: 10px;
 }
 
-.project .button {
+.project .button,
+.assignment .button {
   margin-left: 20px;
 }
 
@@ -203,6 +218,11 @@ main {
     padding: 0 10px;
   }
 
+  /* Adjust assignment section padding on mobile */
+  .assignment {
+    padding: 0 10px;
+  }
+
   /* Adjust contact info padding on mobile */
   .contact-info {
     padding: 0 10px;
@@ -213,6 +233,8 @@ main {
   .subheading,
   .project .paragraph,
   .project .button,
+  .assignment .paragraph,
+  .assignment .button,
   .contact-item {
     margin-left: 10px;
     margin-right: 10px;
