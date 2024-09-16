@@ -116,6 +116,33 @@ main {
   margin-right: 20px;
 }
 
+/* Contact page styles */
+.contact-info {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.contact-item {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.contact-item strong {
+  color: #35424a;
+  display: inline-block;
+  width: 100px;
+}
+
+.contact-item a {
+  color: #e8491d;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
 /* Button styles */
 .button {
   background-color: #e8491d;
@@ -176,11 +203,17 @@ main {
     padding: 0 10px;
   }
 
+  /* Adjust contact info padding on mobile */
+  .contact-info {
+    padding: 0 10px;
+  }
+
   /* Adjust margins for headings and paragraphs on mobile */
   .section-title,
   .subheading,
   .project .paragraph,
-  .project .button {
+  .project .button,
+  .contact-item {
     margin-left: 10px;
     margin-right: 10px;
   }
